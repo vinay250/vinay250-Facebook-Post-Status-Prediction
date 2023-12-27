@@ -1,29 +1,24 @@
-import setuptools
+from setuptools import find_packages,setup
+from typing import List
 
-with open("readme.md","r", encoding="utf-8") as f:
-    long_description = f.read()
-    
-__version__ = "0.1"
+"""HYPEN_E_DOT='-e .'
 
-REPO_NAME = "Facebook Post Status Prediction"
-AUTHOR_USER_NAME = "vinayaka.uppar"
-SCR_REPO = "facebookpostpredict"
-AUTHOR_EMAIL ="vinayakavirat008@gmail.com"
+def get_requirements(file_path:str)->List[str]:
+    requirements=[]
+    with open(file_path) as file_obj:
+        requirements=file_obj.readlines()
+        requirements=[req.replace("\n","") for req in requirements]
 
+        if HYPEN_E_DOT in requirements:
+            requirements.remove(HYPEN_E_DOT)
 
-setuptools.setup(
-    name=SRC_REPO,
-    version=__version__,
-    author=AUTHOR_USER_NAME,
-    author_eamil=AUTHOR_EMAIL,
-    description="A small python package for facebook app",
-    long_description=long_description,
-    long_description_content="text/markdown",
-    url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
-    project_urls={
-        "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
-    },
-    package_dir={"":"source"},
-    packages=setuptools.find_packages(where="source")
+    return requirements"""
+
+setup(
+    name='facebook post predictions',
+    version='0.0.1',
+    author='vinay',
+    author_email='vinayakavirat008@gmail.com',
+    install_requires=["pandas","numpy"],
+    packages=find_packages()
 )
-    
