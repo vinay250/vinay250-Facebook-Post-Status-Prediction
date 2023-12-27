@@ -3,7 +3,7 @@ import setuptools
 with open("readme.md","r", encoding="utf-8") as f:
     long_description = f.read()
     
-__version__ = "0.0.0"
+__version__ = "0.1"
 
 REPO_NAME = "Facebook Post Status Prediction"
 AUTHOR_USER_NAME = "vinayaka.uppar"
