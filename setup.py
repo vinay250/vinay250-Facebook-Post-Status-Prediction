@@ -15,7 +15,7 @@ def get_requirements(file_path:str)->List[str]:
     return requirements"""
 
 setup(
-    name='facebook post predictions',
+    name='facebookpostpredictions',
     version='0.0.1',
     author='vinay',
     author_email='vinayakavirat008@gmail.com',
