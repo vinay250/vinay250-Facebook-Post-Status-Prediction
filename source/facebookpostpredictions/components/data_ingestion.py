@@ -1,5 +1,5 @@
 import pandas as pd
-from .logger import logging
+from facebookpostpredictions.logger import logging
 from facebookpostpredictions.exception import customexception
 
 import os
