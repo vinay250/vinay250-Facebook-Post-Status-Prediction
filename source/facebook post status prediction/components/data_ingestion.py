@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-from facebookpostpredictions import logging
-from facebookpostpredictions import customexception
+from facebookpostpredictions.logger import logging
+from facebookpostpredictions.exception import customexception
 
 import os
 import sys
